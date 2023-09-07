@@ -5,7 +5,7 @@ input.addEventListener("blur", handleBlur);
 function handleBlur() {
   const inputDataSetLength = Number(input.getAttribute("data-length"));
 
-  const inputValueLength = Number(input.value.trim().length);
+  const inputValueLength = input.value.trim().length;
 
   if (inputDataSetLength === inputValueLength) {
     input.classList.add("valid");
